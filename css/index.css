@@ -233,7 +233,7 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
-    transition: all ease-in .3s;
+    
 }
 
 footer nav a {
@@ -241,9 +241,10 @@ footer nav a {
     font-weight: 600;
     text-decoration: none;
     border-bottom: 2px solid transparent;
+    transition: all ease-in .3s;
 }
 
 footer nav a:hover {
-    font-size: 18px;
+    
     border-color: tomato;
 }
