@@ -62,13 +62,56 @@ h1, h2, h3, h4, h5 {
     font-family: 'Rubik', sans-serif;
 }
 
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
 p {
     line-height: 1.4;
 }
 
 .container {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
+}
+
+header {
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-bottom: 2%;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:baseline;
+    
+}
+
+.nav-item {
+    padding: 20px 80px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out .3s;
+}
+
+.nav-item:hover {
+    color: tomato;
+    border-color: black;
+}
+
+.header-img {
+    width: 100%;
+    padding-bottom: 2%;
 }
 
 .top-content {
@@ -77,12 +120,15 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
+    font-size: 22px; 
+    font-weight: 500;
 }
 
 .middle-content {
@@ -102,24 +148,73 @@ p {
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
+    width: 9em;
+    height: 9em;
+    
     margin: 20px 2.5%;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
+
+.box1 {
+    background-color: teal;
+}
+.box2 {
+    background-color: gold;
+}
+.box3 {
+    background-color: cadetblue;
+}
+.box4 {
+    background-color: coral;
+}
+.box5 {
+    background-color: crimson;
+}
+.box6 {
+    background-color: forestgreen;
+}
+.box7 {
+    background-color: darkorchid;
+}
+.box8 {
+    background-color: hotpink;
+}
+.box9 {
+    background-color: indigo;
+}
+.box10 {
+    background-color: dodgerblue;
+}
+
+.box:hover {
+    -webkit-animation:rotate .5s ease-out 0s 1 normal;
+    -moz-animation:rotate .5s ease-out 0s 1 normal;
+    -ms-animation:rotate .5s ease-out 0s 1 normal;
+    animation:rotate .5s ease-out 0s 1 normal;
+    }
+    
+    @-webkit-keyframes rotate {
+    100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+    }
+    @keyframes rotate {
+    100%{ transform: rotate(360deg); }
+    }
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    padding-right: 6%;
+    width: 70%;
 }
 
 .bottom-content .text-container:last-child {
@@ -138,9 +233,18 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
+    
 }
 
 footer nav a {
     color: white;
+    font-weight: 600;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in .3s;
+}
+
+footer nav a:hover {
+    
+    border-color: tomato;
 }

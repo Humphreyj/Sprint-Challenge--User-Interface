@@ -1,0 +1,42 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+}
+
+input {
+    height: 3em;
+    width: 12em;
+    font-size: 14px;
+}
+
+textarea {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form button {
+    width: 25%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid black;
+    transition: all ease-in .3s;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+form button:hover {
+    color: white;
+    background-color: black;
+    border-color: tomato;
+}
+
